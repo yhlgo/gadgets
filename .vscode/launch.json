@@ -1,0 +1,31 @@
+{  
+    "version": "0.2.0",  
+    "configurations": [  
+        {  
+            "name": "g++ - Build and debug active file",  
+            "type": "cppdbg",  
+            "request": "launch",  
+            "program": "${fileDirname}/../../build/test/util/${fileBasenameNoExtension}",  
+            "args": [],  
+            "stopAtEntry": false,  
+            "cwd": "${workspaceFolder}",  
+            "environment": [
+                {
+                    "name":"LD_LIBRARY_PATH",
+                    "value":"${fileDirname}/../../build"
+                }
+            ],
+            "externalConsole": false,  
+            "MIMode": "gdb",  
+            "setupCommands": [  
+                {  
+                    "description": "Enable pretty-printing for gdb",  
+                    "text": "-enable-pretty-printing",  
+                    "ignoreFailures": true  
+                }  
+            ],  
+            "preLaunchTask": "C/C++: gcc",  // 指定在启动调试会话之前需要运行的任务  
+            "miDebuggerPath": "/usr/local/bin/gdb"  
+        }  
+    ]  
+}  

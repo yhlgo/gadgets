@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "time.h": "c",
+        "stdio.h": "c",
+        "cuckoo_hash.h": "c",
+        "test.h": "c",
+        "string.h": "c"
+    },
+    "commentTranslate.source": "Bing"
+}
